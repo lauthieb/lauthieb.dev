@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Card, Button } from 'components/common';
-import { Wrapper, Grid, Item, Content, GoToBlogWrapper } from './styles';
+import { Wrapper, Grid, Item, Content, SeeMoreWrapper } from './styles';
 
 const formatDate = date =>
   new Date(date).toLocaleString('en-GB', {
@@ -37,7 +37,7 @@ export const Posts = () => {
   );
 
   return (
-    <Wrapper as={Container} id="blog-posts">
+    <Wrapper as={Container} id="posts">
       <h2>Posts</h2>
       <Grid>
         {posts.slice(0, 3).map(({ title, coverImage, dateAdded, slug }) => (
@@ -52,12 +52,12 @@ export const Posts = () => {
           </Item>
         ))}
       </Grid>
-      <GoToBlogWrapper>
+      <SeeMoreWrapper>
         <h4>Want to see more posts?</h4>
         <Button as="a" href="https://blog.lauthieb.dev" target="_blank">
           Go to blog
         </Button>
-      </GoToBlogWrapper>
+      </SeeMoreWrapper>
     </Wrapper>
   );
 };
