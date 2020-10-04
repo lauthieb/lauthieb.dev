@@ -1,14 +1,14 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Container, Button } from 'components/common';
-import dev from 'assets/illustrations/skills.svg';
-import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
+import about from 'assets/illustrations/about.svg';
+import { Wrapper, AboutWrapper, Details, Thumbnail } from './styles';
 
-export const Skills = () => (
+export const About = () => (
   <Wrapper id="about">
-    <SkillsWrapper as={Container}>
+    <AboutWrapper as={Container}>
       <Thumbnail>
-        <img src={dev} alt="Developer" />
+        <img src={about} alt="Developer" />
       </Thumbnail>
       <Details>
         <h1>Want to know more?</h1>
@@ -20,6 +20,6 @@ export const Skills = () => (
           Contact me
         </Button>
       </Details>
-    </SkillsWrapper>
+    </AboutWrapper>
   </Wrapper>
 );

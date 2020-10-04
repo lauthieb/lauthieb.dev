@@ -44,3 +44,9 @@ export const Item = styled.div`
 export const Content = styled.div`
   padding: 1rem 0;
 `;
+
+export const GoToBlogWrapper = styled.div`
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+`;

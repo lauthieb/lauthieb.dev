@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
 `;
 
-export const SkillsWrapper = styled.div`
+export const AboutWrapper = styled.div`
   padding: 4rem 0;
   display: flex;
   align-items: center;

@@ -28,6 +28,19 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'HashNode',
+        fieldName: 'hashnode',
+        url: 'https://api.hashnode.com',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `${process.env.HASHNODE_TOKEN}`,
+        },
+        fetchOptions: {},
+      },
+    },
+    {
       resolve: 'gatsby-plugin-nprogress',
       options: {
         color: config.themeColor,
