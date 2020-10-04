@@ -15,7 +15,7 @@ export const Intro = () => (
         </Picture>
         <h1>Hello! 👋</h1>
         <h4>
-          I’m Laurent, Front-End Engineer at{' '}
+          I’m Laurent, Frontend Engineer at{' '}
           <a
             href="https://developers.decathlon.com"
             target="_blank"
@@ -26,26 +26,18 @@ export const Intro = () => (
           </a>
           , Founder of{' '}
           <a
-            href="https://www.meetup.com/ReactBeerLille"
+            href="https://www.meetup.com/FrontendBeers"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="React Beer Lille"
+            aria-label="Frontend Beers"
           >
-            React Beer Lille
+            Frontend Beers
           </a>{' '}
           &{' '}
-          <a
-            href="https://youtu.be/AYmeUnBfWrc"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="React Beer Lille"
-          >
+          <a href="https://youtu.be/AYmeUnBfWrc" target="_blank" rel="noopener noreferrer" aria-label="Musician">
             Musician 🎵
           </a>
         </h4>
-        {/* <Button as={AnchorLink} href="#contact">
-          Contact me
-        </Button> */}
       </Details>
       <Thumbnail>
         <img src={dev} alt="Developer" />
